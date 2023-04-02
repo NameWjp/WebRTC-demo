@@ -1,0 +1,33 @@
+#root {
+  overflow: hidden;
+}
+
+.app {
+  .form-container {
+    width: 500px;
+    margin: 100px auto;
+    .tabs {
+      padding: 20px;
+      border: 1px solid rgba(5, 5, 5, 0.1);
+      border-radius: 5px;
+      .chat-room {
+        height: 300px;
+        overflow-y: auto;
+      }
+    }
+  }
+  .video-container {
+    padding: 20px 50px;
+    display: flex;
+    .video-item {
+      & + .video-item {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+video {
+  max-width: 100%;
+  width: 320px;
+}
